@@ -1,6 +1,6 @@
 FROM larsbk/tegrax1
 MAINTAINER Lars Bjørlykke Kristiansen
-RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ libqt4-dev pkg-config
+RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ pkg-config
 
 #install fake uname
 COPY uname.sh /
