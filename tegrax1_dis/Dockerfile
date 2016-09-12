@@ -1,4 +1,4 @@
-FROM larsbk/tegrax1
+FROM larsbk/tegrax1:latest
 MAINTAINER Lars Bjørlykke Kristiansen
 RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ pkg-config
 
