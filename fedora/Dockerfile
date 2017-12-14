@@ -1,5 +1,5 @@
 FROM fedora:latest
-MAINTAINER Lars Bjørlykke Kristiansen
+MAINTAINER Dolphinics
 RUN dnf -y install git make autoconf libtool gcc gcc-c++ glibc-devel libgcc rpm-build kernel kernel-devel which qt-devel
 #install fake uname
 COPY uname.sh /

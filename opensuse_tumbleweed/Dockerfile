@@ -1,5 +1,5 @@
 FROM opensuse:tumbleweed
-MAINTAINER Lars Bjørlykke Kristiansen
+MAINTAINER Dolphinics
 RUN zypper install -y git make autoconf libtool gcc gcc-c++ rpm-build kernel-default-devel which qt-devel
 #install fake uname
 COPY uname.sh /

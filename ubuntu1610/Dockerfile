@@ -1,5 +1,5 @@
 FROM ubuntu:16.10
-MAINTAINER Lars Bjørlykke Kristiansen
+MAINTAINER Dolphinics
 RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ libqt4-dev pkg-config linux-headers-generic build-essential git
 
 #install fake uname
