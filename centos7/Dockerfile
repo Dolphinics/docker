@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Lars Bjørlykke Kristiansen
+MAINTAINER Dolphinics
 RUN yum -y install git make autoconf libtool gcc gcc-c++ rpm-build kernel kernel-devel which qt-devel
 #install fake uname
 COPY uname.sh /
