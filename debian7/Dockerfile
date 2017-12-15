@@ -1,6 +1,6 @@
 FROM debian:7
 MAINTAINER Dolphinics
-RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ libqt4-dev pkg-config linux-headers-generic build-essential git
+RUN apt-get update && apt-get -y install autoconf make libtool gcc g++ libqt4-dev pkg-config linux-headers-amd64 build-essential git
 
 #install fake uname
 COPY uname.sh /
