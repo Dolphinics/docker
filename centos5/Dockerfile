@@ -3,6 +3,7 @@ MAINTAINER Dolphinics
 
 ENV GITVER=git-2.9.5
 
+#Change yum conf to use vault
 RUN sed -i '/mirrorlist*/d' /etc/yum.repos.d/* 
 RUN sed -i 's/^#baseurl=http:\/\/mirror.centos.org\/centos\/$releasever*/baseurl=http:\/\/vault.centos.org\/5.11/g' /etc/yum.repos.d/*
 
@@ -10,6 +11,7 @@ RUN yum -y install make autoconf libtool gcc gcc-c++ glibc-devel libgcc rpm-buil
     kernel kernel-devel which qt-devel curl-devel expat-devel gettext-devel \
     openssl-devel zlib-devel
 
+#Install git from source
 ADD https://www.kernel.org/pub/software/scm/git/$GITVER.tar.gz /
 RUN tar -xf $GITVER.tar.gz && make -C $GITVER prefix=/usr all install && rm -rf $GITVER*
 
